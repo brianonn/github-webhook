@@ -1,0 +1,16 @@
+{
+	"ImportPath": "github-webhook",
+	"GoVersion": "go1.9",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/google/go-github/github",
+			"Comment": "v15.0.0-16-gd2b80df",
+			"Rev": "d2b80df1e3eeccae96eb1cb489e65372cc9550c8"
+		},
+		{
+			"ImportPath": "github.com/google/go-querystring/query",
+			"Rev": "53e6ce116135b80d037921a7fdd5138cf32d7a8a"
+		}
+	]
+}
