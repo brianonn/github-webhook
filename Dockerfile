@@ -2,15 +2,14 @@ FROM golang:1.9
 
 ADD . /go/src/github-webhook
 
-# Build the outyet command inside the container.
-# (You may fetch or manage dependencies here,
-# either manually or with a tool like "godep".)
-RUN cd /go/src/github-webhook;make
+# Build the github-webhook command inside the container.
+# the Makefile will take care of dependancies too
+RUN cd /go/src/github-webhook && make
 
-# Run the outyet command by default when the container starts.
+# Run the github-webhook command by default when the container starts.
 USER 10000
 WORKDIR /go/src/github-webhook
 ENTRYPOINT ./github-webhook
 
-# Document that the service listens on port 8080.
+# Document that the service listens on port 5000.
 EXPOSE 5000
