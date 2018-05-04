@@ -41,3 +41,4 @@ there is no guaranteed ordering.
   held and executed in order, rather than randomly
 - use cobra for command line arguments
 - use viper for a proper config file
+- or something else
