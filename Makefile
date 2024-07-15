@@ -16,7 +16,7 @@ all: build test
 	@echo "Done."
 
 $(BIN): $(SOURCES)
-	go build .
+	CGO_ENABLED=0 go build .
 
 build: $(BIN)
 
